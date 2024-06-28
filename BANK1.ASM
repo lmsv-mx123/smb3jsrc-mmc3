@@ -285,11 +285,11 @@ loc_0_C1A8:				; CODE XREF: seg000:C1B0j
 		JSR	$6287
 		JMP	$6C92
 ; ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
-unk_0_C1BD:	.BYTE  $5B ; [		; DATA XREF: seg000:C1E3r
+unk_0_C1BD:	.BYTE  $64 ; [		; DATA XREF: seg000:C1E3r
 		.BYTE	 2 ;  
 		.BYTE  $48 ; H
 unk_0_C1C0:	.BYTE  $77 ; w		; DATA XREF: seg000:C1EFr
-		.BYTE  $8F ; Џ
+		.BYTE  $87 ; Џ
 ; ДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДДД
 		LDA	$6FC
 		AND	#$10
@@ -1068,18 +1068,18 @@ unk_0_C52B:	.BYTE  $60 ; `
 		.BYTE  $D0 ; Р
 		.BYTE  $D0 ; Р
 		.BYTE  $60 ; `
-		.BYTE  $7B ; {
-		.BYTE  $7B ; {
-		.BYTE  $7B ; {
-		.BYTE  $7B ; {
-		.BYTE  $7A ; z
-		.BYTE  $7A ; z
-		.BYTE  $7B ; {
-		.BYTE  $7B ; {
-		.BYTE  $7B ; {
-		.BYTE  $7A ; z
-		.BYTE  $7B ; {
-		.BYTE  $7A ; z
+		.BYTE  $8e ; {
+		.BYTE  $8e ; {
+		.BYTE  $8e ; {
+		.BYTE  $8e ; {
+		.BYTE  $8f ; z
+		.BYTE  $8f ; z
+		.BYTE  $8e ; {
+		.BYTE  $8e ; {
+		.BYTE  $8e ; {
+		.BYTE  $8f ; z
+		.BYTE  $8e ; {
+		.BYTE  $8f ; z
 		.BYTE  $AD ; ­
 		.BYTE  $F9 ; щ
 		.BYTE	 7 ;  

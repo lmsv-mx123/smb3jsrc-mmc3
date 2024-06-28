@@ -80,9 +80,9 @@ deadloop:				; CODE XREF: seg000:605Dj
 		JMP	deadloop
 
 EnemyAttributeData:     ; Moved from B50A
-        .db $01, $02, $03, $02, $22, $01, $03, $03
-        .db $03, $01, $01, $02, $02, $21, $01, $02
-        .db $01, $01, $02, $ff, $02, $02, $01, $01
+        .db $01, $02, $03, $02, $23, $01, $03, $03
+        .db $03, $02, $01, $02, $02, $21, $01, $02
+        .db $01, $02, $01, $ff, $02, $02, $01, $01
         .db $02, $02, $02
 
         .pad $609e
@@ -242,13 +242,13 @@ loc_0_618E:				; CODE XREF: seg000:6174j seg000:6191j
 .pad $61a2  ;fixed address is referred to in E000.asm & BANK2.asm ...
 HurrahMsg:                  ;was C8D7
     .db $21, $89, $10
-    .db $11, $1e, $1b, $1b, $0a, $11, $24, $1d, $18, $24, $24       ;hurrah to
-    .db $16, $0a, $1b, $12, $18                                     ;mario
+    .db $24, $24, $24, $16, $22, $24, $11, $0e, $1b, $18, $2b       ;hurrah to
+    .db $24, $24, $24, $24, $24                                     ;mario
     .db $00
 ThankYouMessageFinal:       ;was C893 
     .db $20, $e8, $10
-    .db $1d, $11, $0a, $17, $14, $24, $22, $18, $1e, $24            ;thank you
-    .db $16, $0a, $1b, $12, $18, $2b                                ;mario
+    .db $24, $24, $24, $24, $24, $24, $24, $24, $24, $24            ;thank you
+    .db $24, $24, $24, $24, $24, $24                                ;mario
     .db $23, $c8, $48, $05
     .db $00
 
@@ -1112,7 +1112,7 @@ loc_0_666C:				; CODE XREF: seg000:6667j
 		.BYTE  $47 ; G
 		.BYTE  $24 ; $
 		.BYTE  $22 ; "
-		.BYTE  $4B ; K
+		.BYTE  $2b ; K
 		.BYTE	 5 ;  
 		.BYTE  $1B ;  
 		.BYTE	$E ;  
@@ -1157,17 +1157,17 @@ loc_0_666C:				; CODE XREF: seg000:6667j
 		.BYTE  $45 ; E
 		.BYTE  $AA ; Є
 		.BYTE	 0 ;  
-		.BYTE	 2 ;  
-		.BYTE	 3 ;  
-		.BYTE	 4 ;  
-		.BYTE	 1 ;  
-		.BYTE	 6 ;  
-		.BYTE	 7 ;  
-		.BYTE	 8 ;  
-		.BYTE	 5 ;  
-		.BYTE	$B ;  
-		.BYTE	$C ;  
-		.BYTE	$D ;  
+		.BYTE  $24 ;  
+		.BYTE  $24 ;  
+		.BYTE  $24 ;  
+		.BYTE  $24 ;  
+		.BYTE  $24 ;  
+		.BYTE  $24 ;  
+		.BYTE  $24 ;  
+		.BYTE  $24 ;  
+		.BYTE  $0a ;  
+		.BYTE  $0b ;  
+		.BYTE  $00 ;  
 		.BYTE	 0 ;  
 		.BYTE  $27 ; '
 		.BYTE  $46 ; F
@@ -1496,10 +1496,10 @@ locret_0_6915:				; CODE XREF: sub_0_68BE+4j
 		.BYTE  $24 ; $
 		.BYTE  $24 ; $
 		.BYTE  $24 ; $
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
+		.BYTE  $24 ; &
+		.BYTE  $24 ; &
+		.BYTE  $24 ; &
+		.BYTE  $24 ; &
 
 ; ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ S U B	R O U T	I N E ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ
 
@@ -1653,39 +1653,39 @@ loc_0_69AA:				; CODE XREF: seg000:9C6Ep
 		.BYTE  $24 ; $
 		.BYTE  $24 ; $
 		.BYTE  $24 ; $
-		.BYTE  $35 ; 5
-		.BYTE  $36 ; 6
+		.BYTE  $b4 ; 5
+		.BYTE  $b5 ; 6
 		.BYTE  $25 ; %
-		.BYTE  $37 ; 7
+		.BYTE  $b6 ; 7
 		.BYTE  $25 ; %
 		.BYTE  $24 ; $
-		.BYTE  $38 ; 8
+		.BYTE  $b7 ; 8
 		.BYTE  $24 ; $
 		.BYTE  $24 ; $
 		.BYTE  $24 ; $
 		.BYTE  $30 ; 0
 		.BYTE  $30 ; 0
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
+		.BYTE  $fa ; &
+		.BYTE  $fa ; &
+		.BYTE  $fa ; &
 		.BYTE  $34 ; 4
-		.BYTE  $26 ; &
+		.BYTE  $fa ; &
 		.BYTE  $24 ; $
 		.BYTE  $31 ; 1
 		.BYTE  $24 ; $
 		.BYTE  $32 ; 2
 		.BYTE  $33 ; 3
-		.BYTE  $26 ; &
+		.BYTE  $fa ; &
 		.BYTE  $24 ; $
 		.BYTE  $33 ; 3
 		.BYTE  $34 ; 4
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
+		.BYTE  $fa ; &
+		.BYTE  $fa ; &
+		.BYTE  $fa ; &
+		.BYTE  $fa ; &
+		.BYTE  $fa ; &
+		.BYTE  $fa ; &
+		.BYTE  $fa ; &
 		.BYTE  $24 ; $
 		.BYTE  $C0 ; А
 		.BYTE  $24 ; $
@@ -1839,13 +1839,13 @@ loc_0_69AA:				; CODE XREF: seg000:9C6Ep
 		.BYTE  $52 ; R
 		.BYTE  $52 ; R
 		.BYTE  $80 ; Ђ
-		.BYTE  $A0 ;  
+		.BYTE  $80 ;  
 		.BYTE  $81 ; Ѓ
-		.BYTE  $A1 ; Ў
-		.BYTE  $BE ; ѕ
-		.BYTE  $BE ; ѕ
-		.BYTE  $BF ; ї
-		.BYTE  $BF ; ї
+		.BYTE  $81 ; Ў
+		.BYTE  $ec ; ѕ
+		.BYTE  $ec ; ѕ
+		.BYTE  $ed ; ї
+		.BYTE  $ed ; ї
 		.BYTE  $45 ; E
 		.BYTE  $47 ; G
 		.BYTE  $45 ; E
@@ -1958,14 +1958,14 @@ loc_0_69AA:				; CODE XREF: seg000:9C6Ep
 		.BYTE  $83 ; ѓ
 		.BYTE  $84 ; „
 		.BYTE  $85 ; …
-		.BYTE  $B4 ; ґ
-		.BYTE  $B6 ; ¶
-		.BYTE  $B5 ; µ
-		.BYTE  $B7 ; ·
-		.BYTE  $24 ; $
-		.BYTE  $47 ; G
-		.BYTE  $24 ; $
-		.BYTE  $47 ; G
+		.BYTE  $fb ; ґ
+		.BYTE  $fd ; ¶
+		.BYTE  $fc ; µ
+		.BYTE  $fe ; ·
+		.BYTE  $f3 ; $
+		.BYTE  $f4 ; G
+		.BYTE  $f5 ; $
+		.BYTE  $f6 ; G
 		.BYTE  $86 ; †
 		.BYTE  $8A ; Љ
 		.BYTE  $87 ; ‡
@@ -1974,10 +1974,10 @@ loc_0_69AA:				; CODE XREF: seg000:9C6Ep
 		.BYTE  $91 ; ‘
 		.BYTE  $8F ; Џ
 		.BYTE  $92 ; ’
-		.BYTE  $24 ; $
-		.BYTE  $2F ; /
-		.BYTE  $24 ; $
-		.BYTE  $3D ; =
+		.BYTE  $be ; $
+		.BYTE  $be ; /
+		.BYTE  $bf ; $
+		.BYTE  $bf ; =
 		.BYTE  $24 ; $
 		.BYTE  $24 ; $
 		.BYTE  $24 ; $
@@ -2003,13 +2003,13 @@ loc_0_69AA:				; CODE XREF: seg000:9C6Ep
 		.BYTE  $24 ; $
 		.BYTE  $24 ; $
 		.BYTE  $41 ; A
-		.BYTE  $26 ; &
+		.BYTE  $c5 ; &
 		.BYTE  $41 ; A
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
-		.BYTE  $26 ; &
+		.BYTE  $c5 ; &
+		.BYTE  $c2 ; &
+		.BYTE  $c3 ; &
+		.BYTE  $c4 ; &
+		.BYTE  $c3 ; &
 		.BYTE  $B0 ; °
 		.BYTE  $B1 ; ±
 		.BYTE  $B2 ; І
@@ -2038,18 +2038,18 @@ loc_0_69AA:				; CODE XREF: seg000:9C6Ep
 		.BYTE  $55 ; U
 		.BYTE  $54 ; T
 		.BYTE  $56 ; V
-		.BYTE  $53 ; S
-		.BYTE  $55 ; U
-		.BYTE  $54 ; T
-		.BYTE  $56 ; V
+		.BYTE  $a0 ; S
+		.BYTE  $a1 ; U
+		.BYTE  $ee ; T
+		.BYTE  $ef ; V
 		.BYTE  $A5 ; Ґ
 		.BYTE  $A7 ; §
 		.BYTE  $A6 ; ¦
 		.BYTE  $A8 ; Ё
-		.BYTE  $C2 ; В
-		.BYTE  $C4 ; Д
-		.BYTE  $C3 ; Г
-		.BYTE  $C5 ; Е
+		.BYTE  $a5 ; В
+		.BYTE  $a7 ; Д
+		.BYTE  $a6 ; Г
+		.BYTE  $a8 ; Е
 		.BYTE  $57 ; W
 		.BYTE  $59 ; Y
 		.BYTE  $58 ; X
@@ -2246,7 +2246,7 @@ loc_0_69AA:				; CODE XREF: seg000:9C6Ep
 		.BYTE  $22 ; "    Y
 		.BYTE  $18 ;      O
 		.BYTE  $1E ;      U
-		.BYTE $24 ;       <sp>
+		.BYTE  $f7 ;       <sp>
 		.BYTE  $16 ;      M
 		.BYTE	$A ;      A
 		.BYTE  $1b ;      R
@@ -2718,15 +2718,15 @@ loc_0_6E73:
 		LDA	$7FB
 		BNE	loc_0_6E9C
 		LDA	$75F
-		CMP	#3
+		CMP	#9
 		BCC	loc_0_6E9F
 		BNE	loc_0_6E9C
 		LDA	$75C
-		CMP	#3
+		CMP	#0
 		BCC	loc_0_6E9F
 
 loc_0_6E9C:				; CODE XREF: seg000:6E8Aj seg000:6E93j
-		INC	$6CC
+		INC	$76a
 
 loc_0_6E9F:				; CODE XREF: seg000:6E91j seg000:6E9Aj
 		LDA	$75B
@@ -3031,7 +3031,7 @@ loc_0_7051:				; CODE XREF: seg000:704Bj seg000:704Dj
 		STA	$73C
 		STA	$722
 		STA	$7F8
-		LDA	#2
+		LDA	#$10
 		STA	$FC
 		INC	$774
 		INC	$772
@@ -3148,8 +3148,8 @@ loc_0_70FC:				; CODE XREF: seg000:70F4j
 		.BYTE 0, 0, 1, 2, 3, $11, $12, $12, $13, 0, 0, 0, 0, $AA
 		.BYTE $AA, $9C,	$AA, 0,	$8B, 0,	1, 2, 3, $80, $83, 0, $81
 		.BYTE $84, 0, $82, $85,	0, 2, 0, 0, 3, 0, 0, 4,	0, 0, 0
-		.BYTE 5, 6, 7, 6, $A, 0, 8, 9, $4D, 0, 0, $D, $F, $4E
-		.BYTE $E, $4E, $4E, 0, $D, $1A,	$86, $87, $87, $87, $87
+		.BYTE 5, 6, 7, 6, $A, 0, 8, 9, $4D, 0, 0, $00, $0e, $0f
+		.BYTE $00, $0e, $00, 0, $D, $1A, $86, $87, $87, $87, $87
 		.BYTE $87, $87,	$87, $87, $87, $87, $6A, $6A, 0, 0, 0
 		.BYTE 0, 0, $45, $47, $47, $47,	$47, $47, 0, 0,	0, 0, 0
 		.BYTE 0, 0, 0, 0, 0, 0,	0, 0, $86, $87,	$6A, $6B, $50
@@ -3239,9 +3239,9 @@ loc_0_727E:				; CODE XREF: seg000:7269j
 		LDY	$74E
 		BNE	loc_0_728F
 		LDA	$75F
-		CMP	#7
+		CMP	#12
 		BNE	loc_0_728F
-		LDA	#$63 ; 'c'
+		LDA	#$4e ; 'c'
 		JMP	loc_0_7299
 
 loc_0_728F:				; CODE XREF: seg000:7281j seg000:7288j
@@ -3289,7 +3289,7 @@ loc_0_72C7:				; CODE XREF: seg000:72C0j
 		BNE	loc_0_72DB
 		CPX	#$B
 		BNE	loc_0_72DB
-		LDA	#$6B ; 'k'
+		LDA	#$6c ; 'k'
 		STA	7
 
 loc_0_72DB:				; CODE XREF: seg000:72D1j seg000:72D5j
@@ -5758,7 +5758,7 @@ sub_0_8190:				; CODE XREF: sub_0_7A47+Bp
 		LDY	$B5
 		DEY	
 		BNE	loc_0_81D0
-		LDA	$714
+		LDA	$712
 		BNE	loc_0_81D0
 		LDA	$1D
 		CMP	#3
@@ -6196,13 +6196,13 @@ loc_0_8450:				; CODE XREF: seg000:8449j
 		BNE	loc_0_8480
 		TYA	
 		PHA	
-		LDA	#-$C ; 'ф'
+		LDA	#$f9 ; 'ф'
 		LDY	$75F
-		CPY	#1
+		CPY	#0
 		BEQ	loc_0_8479
-		CPY	#2
+		CPY	#3
 		BEQ	loc_0_8479
-		CPY	#6
+		CPY	#7
 		BNE	loc_0_847B
 
 loc_0_8479:				; CODE XREF: seg000:846Fj seg000:8473j
@@ -7896,7 +7896,7 @@ loc_0_8E63:				; CODE XREF: seg000:8E54j
 		.WORD loc_0_8ED5
 		.WORD loc_0_8F2D
 		.WORD loc_0_8F56
-		.WORD locret_0_8ED4
+		.WORD loc_0_8F56
 		.WORD loc_0_8F60
 		.WORD loc_0_8F60
 		.WORD sub_0_8EDB
@@ -7905,7 +7905,7 @@ loc_0_8E63:				; CODE XREF: seg000:8E54j
 		.WORD loc_0_8F35
 		.WORD sub_0_8F28
 		.WORD loc_0_8F70
-		.WORD loc_0_93D5
+		.WORD sub_0_8EF2
 		.WORD locret_0_8ED4
 		.WORD loc_0_93D5
 		.WORD loc_0_93D5
@@ -8005,7 +8005,7 @@ loc_0_8F0C:				; DATA XREF: seg000:8E70o
 		STA	$3A2,X
 		STA	$58,X
 		LDA	$75F
-		CMP	#6
+		CMP	#0
 		BCS	loc_0_8F23
 		LDY	$6CC
 		LDA	$8F0A,Y
@@ -8700,14 +8700,14 @@ loc_0_9395:				; CODE XREF: seg000:9366j
 
 ;--------------------------------
 loc_0_9398:
- 		LDA	#$22 ; '"'
+ 		LDA	#$23 ; '"'
  		STA	0
  		LDA	#$13
  		STA	1
 		LDA	$7FB
  		BNE	loc_0_93B2
 		LDA	$75F
-		CMP	#3
+		CMP	#$00
  		BCS	loc_0_93B2
  		DEC	0
  		LDA	#$21
@@ -8837,7 +8837,7 @@ loc_0_9460:				; CODE XREF: seg000:947Dj
 		LDY	$74E
 		CPY	#3
 		BEQ	loc_0_9470
-		LDY	$6CC
+		LDY	$76a
 		BNE	loc_0_9470
 		LDA	#6
 
@@ -8995,7 +8995,7 @@ loc_0_953A:				; CODE XREF: seg000:9534p
 		.WORD sub_0_96AC
 		.WORD loc_0_97BE
 		.WORD loc_0_986B
-		.WORD locret_0_9569
+		.WORD loc_0_986B
 		.WORD loc_0_987F
 		.WORD loc_0_987F
 		.WORD loc_0_95E5
@@ -10342,7 +10342,7 @@ loc_0_9D7E:				; CODE XREF: seg000:9D60j seg000:9D6Ej ...
 		LDA	$75F
 		CMP	#7
 		BEQ	loc_0_9D89
-		CMP	#5
+		CMP	#0
 		BCS	loc_0_9DB0
 
 loc_0_9D89:				; CODE XREF: seg000:9D83j
@@ -11346,15 +11346,15 @@ loc_0_A373:				; CODE XREF: sub_0_A319+2j
 		RTS	
 ; End of function sub_0_A319
 
-		.BYTE	 6 ;  
-		.BYTE	 0 ;  
-		.BYTE	 2 ;  
-		.BYTE  $12 ;  
-		.BYTE  $11 ;  
-		.BYTE	 7 ;  
-		.BYTE	 5 ;  
-		.BYTE  $2D ; -
-		.BYTE  $2D ; -
+		.BYTE  $03 ;  
+		.BYTE  $14 ;  
+		.BYTE  $33 ;  
+		.BYTE  $0a ;  
+		.BYTE  $0c ;  
+		.BYTE  $08 ;  
+		.BYTE  $2d ;  
+		.BYTE  $2d ; -
+		.BYTE  $2f ; -
 
 ; ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ S U B	R O U T	I N E ЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫЫ
 
@@ -14130,7 +14130,7 @@ sub_0_B26E:				; CODE XREF: seg000:95B1p
 		LDY	$74E
 		CPY	#3
 		BEQ	loc_0_B28F
-		LDY	$6CC
+		LDY	$76a
 		BEQ	loc_0_B291
 
 loc_0_B28F:				; CODE XREF: sub_0_B26E+1Aj
@@ -14149,7 +14149,7 @@ loc_0_B2A3:				; CODE XREF: sub_0_B26E+31j
 		LDX	8
 		INY	
 		JSR	sub_0_B25B
-		LDA	#2
+		LDA	#$11
 		INY	
 		JSR	sub_0_B25B
 		INX	
@@ -14291,8 +14291,8 @@ locret_0_B363:				; CODE XREF: seg000:B325j
 		.BYTE  $FF ;  
 		.BYTE  $D8 ; Ш
 		.BYTE  $DA ; Ъ
-		.BYTE  $DB ; Ы
-		.BYTE  $FF ;  
+		.BYTE  $94 ; Ы
+		.BYTE  $95 ;  
 		.BYTE	 2 ;  
 		.BYTE	 1 ;  
 		.BYTE	 2 ;  
@@ -14404,13 +14404,13 @@ loc_0_B3EA:				; CODE XREF: sub_0_B37D+38j
 
 loc_0_B52C:				; CODE XREF: seg000:8491p
 					; sub_0_85FE+4Fj ...
-		LDA	#2
+		LDA	#$03
 		LDY	$75F
-		CPY	#1
+		CPY	#$00
 		BEQ	loc_0_B53D
-		CPY	#2
+		CPY	#$03
 		BEQ	loc_0_B53D
-		CPY	#6
+		CPY	#$07
 		BNE	loc_0_B53E
 
 loc_0_B53D:				; CODE XREF: sub_0_B37D+1B6j

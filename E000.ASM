@@ -4134,9 +4134,9 @@ loc_0_FA12:                         ; FA03j FA1Cj
                 RTS     
                 .BYTE  $FD ; ý
 byte_0_FA20:    .BYTE $22, $16, $27, $18 ; FA05r
-                .BYTE $22, $37, $27, $16
+                .BYTE $22, $28, $27, $16
 byte_0_FA28:    .BYTE $22, $30, $27, $19 ; FA12r
-                .BYTE $22, $37, $27, $16
+                .BYTE $22, $28, $27, $16
 
 ;fa30:	blinky stars
                 ldx $6000
